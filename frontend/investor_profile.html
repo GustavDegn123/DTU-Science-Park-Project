@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Investor Profile</title>
+    <link rel="stylesheet" href="/frontend/css/global.css">
+    <link rel="stylesheet" href="/frontend/css/investor_profile.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="logo">
+        <img src="/frontend/images/dtu.png" alt="DTU Logo">
+    </div>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="/dashboard_investor">Dashboard</a></li>
+            <li><a href="/investor_profile">Investor Profile</a></li>
+            <li><a href="/search_startups" class="active">Search Startups</a></li>
+            <li><a href="/my_matches">My Matches</a></li>
+            <li><a href="/about">Log out</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="profile-container">
+    <h1>Investor Profile</h1>
+    
+    <form id="investorProfileForm">
+        <label for="investorType">Investor Type:</label>
+        <input type="text" id="investorType" name="investorType">
+
+        <label for="preferredSectors">Preferred Sectors:</label>
+        <input type="text" id="preferredSectors" name="preferredSectors">
+
+        <label for="impactFocus">Impact Focus:</label>
+        <input type="text" id="impactFocus" name="impactFocus">
+
+        <label for="investmentMin">Investment Range Min (€):</label>
+        <input type="number" id="investmentMin" name="investmentMin" step="1000">
+
+        <label for="investmentMax">Investment Range Max (€):</label>
+        <input type="number" id="investmentMax" name="investmentMax" step="1000">
+
+        <label for="riskProfile">Risk Profile:</label>
+        <select id="riskProfile" name="riskProfile">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+
+        <label for="esgScore">Preferred ESG Score:</label>
+        <input type="number" id="esgScore" name="esgScore" step="0.1" min="0" max="10">
+
+        <button id="saveProfileButton" class="save-btn">Save Profile</button>
+    </form>
+</section>
+
+<script src="/frontend/js/investor_profile.js"></script>
+</body>
+</html>

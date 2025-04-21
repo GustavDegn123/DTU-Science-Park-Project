@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Matches</title>
+    <link rel="stylesheet" href="/frontend/css/global.css">
+    <link rel="stylesheet" href="/frontend/css/my_matches.css">
+    <script defer src="/frontend/js/my_matches.js"></script>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <a href="/"><img src="/frontend/images/dtu.png" alt="DTU Logo"></a>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="/dashboard_investor">Dashboard</a></li>
+            <li><a href="/investor_profile">Investor Profile</a></li>
+            <li><a href="/search_startups" class="active">Search Startups</a></li>
+            <li><a href="/my_matches">My Matches</a></li>
+            <li><a href="/about">Log out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="matches-container">
+        <h1>My Matched Startups</h1>
+        <div id="matchesContainer" class="card-container"></div>
+    </section>
+
+</body>
+</html>

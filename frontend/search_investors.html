@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Investors</title>
+    <link rel="stylesheet" href="/frontend/css/global.css">
+    <link rel="stylesheet" href="/frontend/css/search_investors.css">
+    <script defer src="/frontend/js/search_investors.js"></script>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <a href="/"><img src="/frontend/images/dtu.png" alt="DTU Logo"></a>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="/dashboard_company">Dashboard</a></li>
+                <li><a href="/add-startup">Add Startup</a></li>
+                <li><a href="/search_investors" class="active">Find Investors</a></li>
+                <li><a href="/my_startup_matches" class="active">My Matches</a></li>
+                <li><a href="/about">Log out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="search-container">
+        <h1>Find Investors</h1>
+        <form id="searchForm">
+            <div class="form-group">
+                <label>Sector:</label>
+                <input type="text" name="sector" placeholder="e.g. Renewable Energy">
+            </div>
+
+            <div class="form-group">
+                <label>Funding Stage:</label>
+                <input type="text" name="funding_stage" placeholder="e.g. Seed, Series A">
+            </div>
+
+            <div class="form-group">
+                <label>Minimum Investment (DKK):</label>
+                <input type="number" name="min_investment" placeholder="e.g. 500000">
+            </div>
+
+            <div class="form-group">
+                <label>Impact Focus:</label>
+                <input type="text" name="impact_focus" placeholder="e.g. Green Energy">
+            </div>
+
+            <div class="form-group">
+                <label>Risk Profile:</label>
+                <select name="risk_profile">
+                    <option value="">Any</option>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Minimum ESG Score:</label>
+                <input type="number" name="min_esg_score" placeholder="e.g. 7">
+            </div>
+
+            <button type="submit" class="search-btn">Search</button>
+        </form>
+
+        <h2>Matching Investors</h2>
+        <div id="resultsContainer" class="results-container"></div>
+    </section>
+
+</body>
+</html>

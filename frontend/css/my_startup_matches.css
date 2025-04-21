@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.matches-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #990000;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.investor-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.investor-card h2 {
+    color: #990000;
+    margin-bottom: 5px;
+}
+
+.investor-card p {
+    margin: 5px 0;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Investor Dashboard</title>
+    <link rel="stylesheet" href="/frontend/css/global.css">
+    <link rel="stylesheet" href="/frontend/css/dashboard.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="logo">
+        <img src="/frontend/images/dtu.png" alt="DTU Logo">
+    </div>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="/dashboard_investor">Dashboard</a></li>
+            <li><a href="/investor_profile">Investor Profile</a></li>
+            <li><a href="/search_startups" class="active">Search Startups</a></li>
+            <li><a href="/my_matches">My Matches</a></li>
+            <li><a href="/about">Log out</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="dashboard">
+    <h1 id="welcomeMessage">Welcome, Investor!</h1>
+
+    <h2>Your Investments</h2>
+    <div class="card-container" id="investmentContainer"></div>
+
+    <h2>Available Startups</h2>
+    <div class="card-container" id="startupContainer"></div>
+</section>
+
+<script src="/frontend/js/dashboard_investor.js"></script>
+</body>
+</html>

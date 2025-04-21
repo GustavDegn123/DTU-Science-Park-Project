@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/frontend/css/global.css">
+    <link rel="stylesheet" href="/frontend/css/signup.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="logo">
+        <img src="/frontend/images/dtu.png" alt="DTU Logo">
+    </div>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/signup" class="active">Sign Up</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="form-container">
+    <h2>Create a New Account</h2>
+
+    <div class="role-toggle">
+        <button id="investorBtn" class="active">Investor</button>
+        <button id="companyBtn">Company</button>
+    </div>
+
+    <form id="signupForm">
+        <!-- Investor Fields -->
+        <!-- Investor Fields -->
+<div id="investorFields">
+    <input type="text" id="investorName" placeholder="Full Name" required disabled>
+    <input type="email" id="investorEmail" placeholder="Email" required disabled>
+    <input type="password" id="investorPassword" placeholder="Password" required disabled>
+    <input type="text" id="investorFirstname" placeholder="First Name" required disabled>
+    <input type="text" id="investorLastname" placeholder="Last Name" required disabled>
+    <input type="text" id="investorCountry" placeholder="Country" required disabled>
+</div>
+
+<!-- Company Fields -->
+<div id="companyFields" style="display: none;">
+    <input type="text" id="companyName" placeholder="Company Name" required disabled>
+    <input type="email" id="companyEmail" placeholder="Business Email" required disabled>
+    <input type="password" id="companyPassword" placeholder="Password" required disabled>
+    <input type="text" id="companyFirstname" placeholder="First Name" required disabled>
+    <input type="text" id="companyLastname" placeholder="Last Name" required disabled>
+    <input type="text" id="companyCountry" placeholder="Country" required disabled>
+</div>
+
+        <button type="submit" class="primary-btn">Create Account</button>
+    </form>
+
+    <p id="signupResult"></p>
+</section>
+
+<script src="/frontend/js/signup.js"></script>
+</body>
+</html>

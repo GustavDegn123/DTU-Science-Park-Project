@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Startups</title>
+    <link rel="stylesheet" href="/frontend/css/global.css">
+    <link rel="stylesheet" href="/frontend/css/search_startups.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="logo">
+            <img src="/frontend/images/dtu.png" alt="DTU Logo">
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="/dashboard_investor">Dashboard</a></li>
+                <li><a href="/investor_profile">Investor Profile</a></li>
+                <li><a href="/search_startups" class="active">Search Startups</a></li>
+                <li><a href="/my_matches">My Matches</a></li>
+                <li><a href="/about">Log out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <h1>Find Startups to Invest In</h1>
+    </section>
+
+    <main>
+        <section class="search-container">
+            <form id="searchForm">
+                <label for="sector">Sector:</label>
+                <input type="text" id="sector" name="sector" placeholder="e.g. Renewable Energy">
+            
+                <label for="fundingStage">Funding Stage:</label>
+                <input type="text" id="fundingStage" name="fundingStage" placeholder="e.g. Series A">
+            
+                <label for="revenue">Revenue (DKK):</label>
+                <input type="number" id="revenue" name="revenue" placeholder="e.g. 200000">
+            
+                <label for="employees">Number of Employees:</label>
+                <input type="number" id="employees" name="employees" placeholder="e.g. 50">
+            
+                <label for="esgScore">ESG Score:</label>
+                <input type="number" id="esgScore" name="esgScore" placeholder="e.g. 80">
+            
+                <label for="tractionScore">Traction Score:</label>
+                <input type="number" id="tractionScore" name="tractionScore" placeholder="e.g. 75">
+            
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <!-- Results Section -->
+        <section id="resultsContainer"></section>
+    </main>
+
+    <script src="/frontend/js/search_startups.js"></script>
+
+</body>
+</html>

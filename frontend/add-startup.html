@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Add a New Startup</title>
+    <link rel="stylesheet" href="/frontend/css/global.css">
+    <link rel="stylesheet" href="/frontend/css/add-startup.css">  
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <a href="/"><img src="/frontend/images/dtu.png" alt="DTU Logo"></a>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="/dashboard_company">Dashboard</a></li>
+                <li><a href="/add-startup">Add Startup</a></li>
+                <li><a href="/search_investors" class="active">Find Investors</a></li>
+                <li><a href="/my_startup_matches" class="active">My Matches</a></li>
+                <li><a href="/about">Log out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="add-startup-container">
+        <h2>Add a New Startup</h2>
+        <form id="startupForm">
+            <label for="startupName">Startup Name:</label>
+            <input type="text" id="startupName" name="startupName" required />
+
+            <label for="startupDesc">Description:</label>
+            <textarea id="startupDesc" name="startupDesc" required></textarea>
+
+            <label for="sector">Sector:</label>
+            <input type="text" id="sector" name="sector" />
+
+            <label for="fundingStage">Funding Stage:</label>
+            <input type="text" id="fundingStage" name="fundingStage" />
+
+            <label for="revenue">Revenue:</label>
+            <input type="number" id="revenue" name="revenue" />
+
+            <label for="employees">Employees:</label>
+            <input type="number" id="employees" name="employees" />
+
+            <label for="fundingGoal">Funding Goal:</label>
+            <input type="number" id="fundingGoal" name="fundingGoal" />
+
+            <label for="impactScore">Impact Score (1-10):</label>
+            <input type="number" id="impactScore" name="impactScore" min="1" max="10" required />
+
+            <label for="esgScore">ESG Score (1-10):</label>
+            <input type="number" id="esgScore" name="esgScore" min="1" max="10" />
+
+            <label for="traction">Traction:</label>
+            <input type="number" id="traction" name="traction" />
+
+            <label for="fundingHistory">Funding History:</label>
+            <input type="number" id="fundingHistory" name="fundingHistory" />
+
+            <label for="sdgAlignment">SDG Alignment:</label>
+            <input type="number" id="sdgAlignment" name="sdgAlignment" />
+
+            <label for="fundingSought">Funding Sought:</label>
+            <input type="number" id="fundingSought" name="fundingSought" required />
+
+            <label for="fundingReceived">Funding Received:</label>
+            <input type="number" id="fundingReceived" name="fundingReceived" />
+
+            <button type="submit" class="primary-btn">Create Startup</button>
+        </form>
+        <div id="resultArea"></div>
+    </section>
+
+    <script src="/frontend/js/auth.js"></script>
+    <script src="/frontend/js/addStartup.js"></script>
+</body>
+</html>
