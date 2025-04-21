@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Environment
+.env
+.venv/
+venv/
+env/
+ENV/
+
+# VS Code
+.vscode/
+
+# OS-specifikt
+.DS_Store
+Thumbs.db
+
+# Alembic migrations cache
+alembic/versions/*.pyc
+*.sqlite3
+
+# Logs og lokale filer
+*.log
+*.bak
+*.swp
+
+# Pytest / coverage
+.cache/
+.pytest_cache/
+htmlcov/
+coverage.xml
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+
+# FastAPI static og templates (hvis genereret)
+staticfiles/
+templates_compiled/
